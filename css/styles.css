@@ -814,7 +814,6 @@ body {
 .modal-form-checkbox {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -822,12 +821,14 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
 }
-.agreement-checkbox:checked + .modal-form-agreement-box .modal-form-checkbox {
-  background-color: #404bbf;
+.agreement-checkbox:checked + .modal-form-agreement-box > .modal-form-checkbox {
+  background-color: var(--accent-color);
+  fill: var(--white-color--);
   border: none;
-  fill: #f4f4fd;
 }
 .modal-form-checkbox-icon {
   fill: currentColor;
