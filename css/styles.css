@@ -787,7 +787,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--secondary-text-color);
+  color: var(--grey-40);
   border: 1px solid var(--grey-40);
   border-radius: 4px;
   background-color: transparent;
@@ -825,8 +825,9 @@ body {
   fill: transparent;
 }
 .agreement-checkbox:checked + .modal-form-agreement-box .modal-form-checkbox {
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .modal-form-agreement-link {
   color: var(--color-link--);
