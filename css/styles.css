@@ -763,6 +763,9 @@ body {
 .modal-form-input:focus {
   border-color: var(--color-link--);
 }
+.modal-form-input:not(:placeholder-shown):required:invalid {
+  border-color: rgb(240, 47, 37);
+}
 .modal-form-icon {
   color: var(--secondary-text-color);
   position: absolute;
@@ -806,6 +809,10 @@ body {
   gap: 8px;
 }
 .modal-form-agreement-box {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
